@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 10px 100px;
+    background: aqua;
+}
+
+.container {
+
+    background-position: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 50px 0px;
+}
+
+form {
+    width: 40%;
+    margin: auto;
+    border: none;
+    background: white;
+    border-radius: 40px;
+    padding: 40px 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+
+}

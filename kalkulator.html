@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="container">
+    <form id="formulir">
+    
+       <h1>Simple Kalkulator</h1>
+        
+        <label>Angka Pertama</label>
+        <input class="w3-input" type="text" name="angkaSatu" value="" onfocus="myFocus1()"/>
+        <label>Angka Kedua</label>
+        <input class="w3-input" type="text" name="angkaDua" value="" onfocus="myFocus2()"/>
+        <label>Hasil</label>
+        <input type="text" name="hasil" value="0" disabled/>
+        <input class="w3-button w3-circle w3-black" type="button" name="tambah" value="+" onclick="penjumlahan()"/>
+        <input class="w3-button w3-circle w3-teal" type="button" name="kurang" value="-" onclick="pengurangan()"/>
+        <input class="w3-button w3-circle w3-black" type="button" name="kali" value="x" onclick="perkalian()"/>
+        <input class="w3-button w3-circle w3-teal" type="button" name="bagi" value="/" onclick="pembagian()"/>
+        <input class="w3-button w3-circle w3-black" type="button" name="pangkat" value="^" onclick="perPangkatan()"/>
+        
+        <input class="w3-button w3-indigo" type="submit" name="batal"  value="batal" onclick="kosongAll()"/>
+    
+        
+    </form>
+    </div>
+</body>
+<script src="kalkulator.js"></script>
+</html>
