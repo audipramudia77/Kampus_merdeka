@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+   
+</head>
+<body>
+    <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" style="margin-left: 39%;">
+                <h1>Daftar Bencana Gempa</h1>
+          </ul>
+        </div>
+        <div class="card-body">
+            <table id="customers">
+                <thead>
+                    <tr>
+                        <th>Lokasi</th>
+                        <th>skala</th>
+                        <th>Dampak</th>
+                    </tr>
+                </thead>
+                <tbody>
+            <script>
+                class Gempa{
+            
+                    constructor(skala, lokasi){
+                        this.besar = skala;
+                        this.tempat = lokasi;
+            
+                    }
+                    dampak(){
+                        let gempa;
+                        if(this.besar >= 0 && this.besar <= 2)  gempa = "dampaknya tidak terasa";
+                            
+                        else if(this.besar > 2  && this.besar <= 4) gempa = "dampaknya ratak - ratak";
+                            
+                        else if(this.besar > 4 && this.besar <= 6) gempa = "dampaknya bangunan roboh";
+                            
+                        else if(this.besar > 6) gempa = "dampaknya bangunan roboh berpotensi tsunami";
+                            
+                        else gempa = "aman tentram";
+                            
+                        document.write(`<tr>
+                                        <td>${this.tempat}</td>
+                                        <td>${this.besar} SK</td>
+                                        <td>${gempa}</td>
+                                        
+                                    </tr>`);
+        
+                    
+               
+                
+                    }
+                }
+                </script>
+            
+                            <script>
+                            let gempa1 = new Gempa(3.4,'Jepang' );
+                            let gempa2 = new Gempa(4.0,'Rusia' );
+                            let gempa3 = new Gempa(4.8,'Kanada' );
+                            let gempa4 = new Gempa(3.5,'Tailan');
+                            let gempa5 = new Gempa(7,'Inggris',);
+                            let gempa6 = new Gempa(3.5,'Ukraina');
+                            let gempa7 = new Gempa(3.5,'Meksiko');
+                            let gempa8 = new Gempa(4.2,'Afrika');
+                            let gempa9 = new Gempa(3.4,'Belgia');
+                            let gempa10 = new Gempa(3.8,'Argentina');
+            
+                       
+                                gempa1.dampak();
+                                gempa2.dampak();
+                                gempa3.dampak();
+                                gempa4.dampak();
+                                gempa5.dampak();
+                                gempa6.dampak();
+                                gempa7.dampak();
+                                gempa8.dampak();
+                                gempa9.dampak();
+                                gempa10.dampak();
+                            
+            
+               
+            </script>  
+            </tbody>
+        </table>
+        </div>
+    </div>
+      
+</body>
+</html>
